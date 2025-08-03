@@ -1,0 +1,9 @@
+DELETE FROM academic;
+DELETE FROM addcourse;
+DELETE FROM appeal;
+DELETE FROM course;
+DELETE FROM course;
+DELETE FROM dropcourse;
+DELETE FROM faculty;
+DELETE FROM student;
+DELETE FROM studentcourse;

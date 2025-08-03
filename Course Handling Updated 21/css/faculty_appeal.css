@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 235, 211);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(191, 97, 97);
+  user-select: none;
+}
+.navigation {
+  display: flex; /* Ensure nav items are in a row */
+  align-items: center; /* Vertically align nav items */
+}
+
+.navigation .btnLogin-popup {
+  margin-left: 40px;
+  padding: 10px 20px; /* Match the nav link size */
+  height: auto; /* Remove fixed height */
+  display: flex; /* Center text inside button */
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation a {
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  font-size: 1.1em;
+  color: rgb(191, 97, 97);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: rgb(191, 97, 97);
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform.5s;
+}
+.navigation a:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navigation .btnLogin-popup {
+  font-family: "Times New Roman", Times, serif;
+  width: 130px;
+  height: 50px;
+  background-color: aliceblue;
+  border: 2px solid rgb(209, 141, 141);
+  color: rgb(11, 11, 11);
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.welcome-message {
+  margin-left: 20px; /* Add space to the left */
+  padding: 8px 12px; /* Inner padding for breathing room */
+  background-color: #f5e1e1; /* Optional: light background */
+  color: #b76161; /* Match your theme color */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 1.1em; /* Slightly larger text */
+}
+
+.navigation .btnLogin-popup:hover {
+  background-color: white;
+  color: #000;
+}
+table {
+  width: 90%;
+  margin: 10px auto 30px auto;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  background-color: #ffffff;
+}
+th {
+  background: #555;
+  color: #fff;
+}
+h3 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+button {
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+}
+select {
+  display: block;
+  margin: 20px auto; /* Horizontally centers block-level elements */
+  padding: 8px 12px;
+  border: 2px solid rgb(191, 97, 97);
+  border-radius: 6px;
+  background-color: #fffaf6;
+  font-size: 1em;
+  color: #333;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
